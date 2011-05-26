@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'coffee-script'
-require "execjs"
 
 #default test
   
