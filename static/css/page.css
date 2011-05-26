@@ -1,0 +1,3 @@
+body, html { overflow-x:hidden }
+body { background:#00B513 url('../img/bg_page.jpg') left top repeat-x;  }
+#main { height:650px; background:url('../img/bg_zirafky.png') left bottom no-repeat; position:relative; z-index:100 }
