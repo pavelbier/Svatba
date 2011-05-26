@@ -1,96 +1,100 @@
-2011-05-26T12:04:54-07:00 heroku[api]: Add-on add logging:basic by pavel.bier@gmail.com
-2011-05-26T12:04:54-07:00 heroku[api]: Release v2 created by pavel.bier@gmail.com
-2011-05-26T12:04:55-07:00 heroku[api]: Add-on update shared-database
-2011-05-26T12:04:55-07:00 heroku[api]: Release v3 created by pavel.bier@gmail.com
-2011-05-26T12:06:21-07:00 heroku[slugc]: Slug compilation started
-2011-05-26T12:06:23-07:00 heroku[nginx]: GET / HTTP/1.1 | 66.249.85.65 | 2832 | http | 200
-2011-05-26T12:06:24-07:00 heroku[api]: Deploy d0317b8 by pavel.bier@gmail.com
-2011-05-26T12:06:24-07:00 heroku[api]: Release v4 created by pavel.bier@gmail.com
-2011-05-26T12:06:24-07:00 heroku[web.1]: State changed from created to starting
-2011-05-26T12:06:24-07:00 heroku[slugc]: Slug compilation finished
-2011-05-26T19:06:27+00:00 heroku[web.1]: Starting process with command: `thin -p 8165 -e production -R /home/heroku_rack/heroku.ru start`
-2011-05-26T19:06:28+00:00 app[web.1]: /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': no such file to load -- sinatra (LoadError)
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from ./main.rb:2
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from config.ru:1
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:46:in `new'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:46:in `map'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:18
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `new'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `new'
-2011-05-26T19:06:28+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1
-2011-05-26T19:06:28+00:00 heroku[web.1]: Process exited
-2011-05-26T12:06:29-07:00 heroku[web.1]: State changed from starting to crashed
-2011-05-26T12:06:29-07:00 heroku[web.1]: State changed from crashed to created
-2011-05-26T12:06:29-07:00 heroku[web.1]: State changed from created to starting
-2011-05-26T19:06:32+00:00 heroku[web.1]: Starting process with command: `thin -p 17481 -e production -R /home/heroku_rack/heroku.ru start`
-2011-05-26T19:06:33+00:00 app[web.1]: /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': no such file to load -- sinatra (LoadError)
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from ./main.rb:2
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from config.ru:1
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:46:in `new'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:46:in `map'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:18
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `new'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `new'
-2011-05-26T19:06:33+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1
-2011-05-26T19:06:33+00:00 heroku[web.1]: Process exited
-2011-05-26T12:06:34-07:00 heroku[web.1]: State changed from starting to crashed
-2011-05-26T19:06:35+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T19:06:36+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T19:06:58+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T19:06:58+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T12:09:47-07:00 heroku[slugc]: Slug compilation started
-2011-05-26T12:09:49-07:00 heroku[api]: Deploy 526b400 by pavel.bier@gmail.com
-2011-05-26T12:09:49-07:00 heroku[api]: Release v5 created by pavel.bier@gmail.com
-2011-05-26T12:09:49-07:00 heroku[web.1]: State changed from crashed to created
-2011-05-26T12:09:50-07:00 heroku[web.1]: State changed from created to starting
-2011-05-26T12:09:50-07:00 heroku[slugc]: Slug compilation finished
-2011-05-26T19:09:55+00:00 heroku[web.1]: Starting process with command: `thin -p 13238 -e production -R /home/heroku_rack/heroku.ru start`
-2011-05-26T19:09:56+00:00 app[web.1]: /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': no such file to load -- sinatra (LoadError)
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from ./main.rb:2
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from config.ru:1
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:46:in `new'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:46:in `map'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:18
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `new'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `instance_eval'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /usr/ruby1.8.7/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/builder.rb:29:in `initialize'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `new'
-2011-05-26T19:09:56+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1
-2011-05-26T19:09:56+00:00 heroku[web.1]: Process exited
-2011-05-26T12:09:57-07:00 heroku[web.1]: State changed from starting to crashed
-2011-05-26T19:10:03+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T19:10:03+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T12:15:23-07:00 heroku[api]: Requested migration from bamboo-ree-1.8.7 to bamboo-mri-1.9.2 by pavel.bier@gmail.com
-2011-05-26T19:16:24+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
-2011-05-26T12:16:25-07:00 heroku[nginx]: GET / HTTP/1.1 | 85.71.174.14 | 796 | http | 503
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:63:in `map'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:18:in `block (2 levels) in <main>'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `new'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `block in <main>'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `new'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `<main>'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/rack/adapter/loader.rb:36:in `eval'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/rack/adapter/loader.rb:36:in `load'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:175:in `load_rackup_config'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:65:in `start'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:177:in `run_command'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:143:in `run!'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/bin/thin:6:in `<top (required)>'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/bin/thin:19:in `load'
+2011-05-26T19:19:27+00:00 app[web.1]: 	from /usr/ruby1.9.2/bin/thin:19:in `<main>'
+2011-05-26T19:19:27+00:00 heroku[web.1]: Process exited
+2011-05-26T12:19:27-07:00 heroku[web.1]: State changed from starting to crashed
+2011-05-26T12:19:27-07:00 heroku[web.1]: State changed from crashed to created
+2011-05-26T12:19:27-07:00 heroku[web.1]: State changed from created to starting
+2011-05-26T19:19:30+00:00 heroku[web.1]: Starting process with command: `thin -p 29287 -e production -R /home/heroku_rack/heroku.ru start`
+2011-05-26T19:19:31+00:00 app[web.1]: <internal:lib/rubygems/custom_require>:29:in `require': no such file to load -- sinatra (LoadError)
+2011-05-26T19:19:31+00:00 app[web.1]: 	from <internal:lib/rubygems/custom_require>:29:in `require'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /app/main.rb:2:in `<top (required)>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from <internal:lib/rubygems/custom_require>:29:in `require'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from <internal:lib/rubygems/custom_require>:29:in `require'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from config.ru:1:in `block (3 levels) in <main>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23:in `eval'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23:in `block (3 levels) in <main>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:63:in `new'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:63:in `map'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:18:in `block (2 levels) in <main>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `new'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `block in <main>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `new'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `<main>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/rack/adapter/loader.rb:36:in `eval'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/rack/adapter/loader.rb:36:in `load'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:175:in `load_rackup_config'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:65:in `start'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:177:in `run_command'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:143:in `run!'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/bin/thin:6:in `<top (required)>'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/bin/thin:19:in `load'
+2011-05-26T19:19:31+00:00 app[web.1]: 	from /usr/ruby1.9.2/bin/thin:19:in `<main>'
+2011-05-26T19:19:31+00:00 heroku[web.1]: Process exited
+2011-05-26T12:19:32-07:00 heroku[web.1]: State changed from starting to crashed
+2011-05-26T19:19:33+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
+2011-05-26T19:19:33+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
+2011-05-26T12:21:27-07:00 heroku[slugc]: Slug compilation started
+2011-05-26T12:21:29-07:00 heroku[api]: Deploy 553d606 by pavel.bier@gmail.com
+2011-05-26T12:21:29-07:00 heroku[api]: Release v7 created by pavel.bier@gmail.com
+2011-05-26T12:21:29-07:00 heroku[web.1]: State changed from crashed to created
+2011-05-26T12:21:29-07:00 heroku[slugc]: Slug compilation finished
+2011-05-26T12:21:29-07:00 heroku[web.1]: State changed from created to starting
+2011-05-26T19:21:35+00:00 heroku[web.1]: Starting process with command: `thin -p 13003 -e production -R /home/heroku_rack/heroku.ru start`
+2011-05-26T19:21:36+00:00 app[web.1]: <internal:lib/rubygems/custom_require>:29:in `require': no such file to load -- sinatra (LoadError)
+2011-05-26T19:21:36+00:00 app[web.1]: 	from <internal:lib/rubygems/custom_require>:29:in `require'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /app/main.rb:2:in `<top (required)>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from <internal:lib/rubygems/custom_require>:29:in `require'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from <internal:lib/rubygems/custom_require>:29:in `require'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from config.ru:1:in `block (3 levels) in <main>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23:in `eval'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:23:in `block (3 levels) in <main>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:63:in `new'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:63:in `map'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:18:in `block (2 levels) in <main>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `new'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:11:in `block in <main>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `instance_eval'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/builder.rb:46:in `initialize'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `new'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /home/heroku_rack/heroku.ru:1:in `<main>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/rack/adapter/loader.rb:36:in `eval'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/rack/adapter/loader.rb:36:in `load'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:175:in `load_rackup_config'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:65:in `start'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:177:in `run_command'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:143:in `run!'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/bin/thin:6:in `<top (required)>'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/bin/thin:19:in `load'
+2011-05-26T19:21:36+00:00 app[web.1]: 	from /usr/ruby1.9.2/bin/thin:19:in `<main>'
+2011-05-26T19:21:36+00:00 heroku[web.1]: Process exited
+2011-05-26T12:21:37-07:00 heroku[web.1]: State changed from starting to crashed
+2011-05-26T19:21:37+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/ dyno=none queue=0 wait=0ms service=0ms bytes=0
+2011-05-26T19:21:37+00:00 heroku[router]: Error H10 (App crashed) -> GET pavelahanka.heroku.com/favicon.ico dyno=none queue=0 wait=0ms service=0ms bytes=0
+2011-05-26T12:21:38-07:00 heroku[nginx]: GET / HTTP/1.1 | 85.71.174.14 | 796 | http | 503
