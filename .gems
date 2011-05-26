@@ -1,2 +1,4 @@
 sinatra
-"therubyracer-heroku", "~> 0.8.1.pre3"
+coffee-script-source
+coffee-script
+therubyracer-heroku
