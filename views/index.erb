@@ -30,6 +30,57 @@
     <div id="main" role="main">
       
     </div>
+
+    <img src="/img/mrak1.png" alt="" style="left:-200px;top:100px;z-index:5;position:absolute" class="mrakl" />
+    <img src="/img/mrak2.png" alt="" style="left:100%;top:150px;z-index:5;position:absolute" class="mrakr" />
+    <img src="/img/mrak3.png" alt="" style="left:-200px;top:200px;z-index:5;position:absolute" class="mrakl" />
+    <img src="/img/mrak2.png" alt="" style="left:1000px;top:250px;z-index:5;position:absolute" class="mrakr" />
+    <img src="/img/mrak1.png" alt="" style="left:;top:175px;z-index:5;position:absolute" class="mrakl" />
+    <img src="/img/mrak3.png" alt="" style="left:-100px;top:140px;z-index:5;position:absolute" class="mrakr" />
+    <img src="/img/mrak2.png" alt="" style="left:100px;top:70px;z-index:5;position:absolute" class="mrakl" />
+
+    <style type="text/css">
+
+      .mrakl, .mrakr {
+        -webkit-animation-name: mrak-move-r;
+        -webkit-animation-duration: 50s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-transition: none;
+
+      }
+
+      .mrakr {
+        -webkit-animation-name: mrak-move-l;
+      }
+
+      @-webkit-keyframes mrak-move-r {
+        from {
+          -webkit-transform: translate(-200px);
+        }
+        50% {
+          -webkit-transform: translate(2000px);
+        }
+        to {
+          -webkit-transform: translate(-200px);
+        } 
+      }     
+
+      @-webkit-keyframes mrak-move-l {
+        from {
+          -webkit-transform: translate(0px);
+        }
+        50% {
+          -webkit-transform: translate(-1000px);
+        }
+        to {
+          -webkit-transform: translate(0px);
+        } 
+      }     
+
+
+    </style>
+
+
     <footer>
 
     </footer>
@@ -42,7 +93,7 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
-  <script src="js/application.js"></script>
+  <!-- script src="js/application.js"></script -->
   <!-- end scripts-->
 
 
