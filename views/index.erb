@@ -31,13 +31,18 @@
       
     </div>
 
-    <img src="/img/mrak1.png" alt="" style="left:-200px;top:100px;z-index:5;position:absolute" class="mrakl" />
+    <% 6.times do %>      
+      <img src="/img/mrak<%= rand(3)+1 %>.png" alt="" style="left:100%;top:<%= rand(500)%>px;z-index:5;position:absolute" class="mrakr" />  
+    <% end %>
+
+    <!--
     <img src="/img/mrak2.png" alt="" style="left:100%;top:150px;z-index:5;position:absolute" class="mrakr" />
     <img src="/img/mrak3.png" alt="" style="left:-200px;top:200px;z-index:5;position:absolute" class="mrakl" />
     <img src="/img/mrak2.png" alt="" style="left:1000px;top:250px;z-index:5;position:absolute" class="mrakr" />
     <img src="/img/mrak1.png" alt="" style="left:;top:175px;z-index:5;position:absolute" class="mrakl" />
     <img src="/img/mrak3.png" alt="" style="left:-100px;top:140px;z-index:5;position:absolute" class="mrakr" />
     <img src="/img/mrak2.png" alt="" style="left:100px;top:70px;z-index:5;position:absolute" class="mrakl" />
+    -->
 
     <style type="text/css">
 
