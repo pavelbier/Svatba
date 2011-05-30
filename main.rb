@@ -17,6 +17,6 @@ get '/css/page.css' do
 end
 
 get '/' do
-	@mraku = 15+rand(15)
+	@mraku = 10+rand(10)
 	erb :index
 end

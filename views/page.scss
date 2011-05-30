@@ -11,6 +11,7 @@ body {
   position:relative; 
   z-index:100; 
   padding-left:350px; 
+  font-family: 'Architects Daughter', arial, serif;
 }
 
 $text-border-radius: 12px;
@@ -21,7 +22,8 @@ $text-box-shadow: 0px 0px 34px #fff;
 	width:500px; 
 	height:600px;
 	background:#fff;
-  color:#fff;
+  color:#905000;
+  -webkit-font-smoothing:antialiased;
 	background:rgba(255,255,255,0.6); 
   -moz-border-radius: $text-border-radius; 
   -webkit-border-radius: $text-border-radius; 
@@ -44,7 +46,7 @@ $text-box-shadow: 0px 0px 34px #fff;
   0 20px 20px rgba(0,0,0,.15);  
 
   h1 {
-    font-size:27px;
+    font-size:30px;
     margin:0 0 10px 0;
     text-shadow:0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
@@ -64,7 +66,7 @@ $text-box-shadow: 0px 0px 34px #fff;
 
 #text-container {
   padding:15px;
-  font-size:17px;
+  font-size:20px;
 
 }
 
