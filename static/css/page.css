@@ -53,6 +53,10 @@ font-size:27px;
 /* sekce s mraky */
 
   .mrakl, .mrakr {
+
+    position:absolute;
+    z-index:5;
+
     -webkit-animation-name: mrak-move-r;
     -webkit-animation-duration: 50s;
     -webkit-animation-iteration-count: infinite;
