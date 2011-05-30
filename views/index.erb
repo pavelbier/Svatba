@@ -1,5 +1,5 @@
     <div id="mraky">
-    <% 25.times do %>
+    <% @mraku.times do %>
       <% 
         if rand(2)  == 1 
           mrak_position = 'left'
@@ -9,7 +9,7 @@
           mrak_class    = 'mrakl'
         end
       %>      
-      <img src="/img/mrak<%= rand(3)+1 %>.png" alt="" class="<%= mrak_class %> speed<%= rand(20)+1 %>" style="<%= mrak_position %>:100%;top:<%= rand(500)%>px" />
+      <img src="/img/mrak<%= rand(3)+1 %>.png" alt="" class="<%= mrak_class %> speed<%= rand(20)+1 %>" style="<%= mrak_position %>:<%= 10+rand(80) %>%;top:<%= rand(500)%>px" />
     <% end %>
     </div>
 
