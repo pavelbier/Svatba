@@ -5,17 +5,19 @@ body, html {
 body { 
   background:#00B513 url('../img/bg_page.jpg') left top repeat-x;  
 }
+
 #content { 
   height:650px; 
   background:url('../img/bg_zirafky.png') 20px 150px no-repeat; 
   position:relative; 
   z-index:100; 
   padding-left:350px; 
-  font-family: 'Architects Daughter', arial, serif;
 }
 
 $text-border-radius: 12px;
 $text-box-shadow: 0px 0px 34px #fff;
+$text_transition  : 500ms;
+$text_hover_scale : 1.1;
 
 #text { 
 	margin:50px 0 0; 
@@ -61,6 +63,21 @@ $text-box-shadow: 0px 0px 34px #fff;
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);  
   }
+
+
+  font-family: 'Architects Daughter', arial, serif;
+  -webkit-transition: all $text_transition linear;
+  -moz-transition: all $text_transition linear;
+  -o-transition: all $text_transition linear;
+  transition: all $text_transition linear;
+
+  &:hover {
+    -webkit-transform: scale($text_hover_scale);
+    -moz-transform: scale($text_hover_scale);
+    -o-transform: scale($text_hover_scale);  
+    transform: scale($text_hover_scale);
+
+  }  
 
 }
 
