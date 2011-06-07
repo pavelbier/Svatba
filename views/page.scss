@@ -1,6 +1,5 @@
 body, html { 
-  overflow-x:hidden; 
-  min-width:870px 
+  overflow-x:hidden;
 }
 body { 
   background:#00B513 url('../img/bg_page.jpg') left top repeat-x;  
@@ -12,19 +11,24 @@ body {
   position:relative; 
   z-index:100; 
   padding-left:350px; 
+  min-width:670px;
+
 }
 
 $text-border-radius: 12px;
 $text-box-shadow: 0px 0px 34px #fff;
 $text_transition  : 500ms;
-$text_hover_scale : 1.1;
+$text_hover_scale : 1.02;
+$link_hover_scale : 1.25;
 
 #text { 
 	margin:50px 0 0; 
-	width:500px; 
+	width:500px;
+  padding:0;
 	height:600px;
 	background:#fff;
   color:#905000;
+  overflow:hidden;
   -webkit-font-smoothing:antialiased;
 	background:rgba(255,255,255,0.6); 
   -moz-border-radius: $text-border-radius; 
@@ -81,10 +85,86 @@ $text_hover_scale : 1.1;
 
 }
 
+@mixin hover-child {
+  
+    -webkit-transform: scale($link_hover_scale);
+    -moz-transform: scale($link_hover_scale);
+    -o-transform: scale($link_hover_scale);  
+    transform: scale($link_hover_scale);                  
+}
+
+
+#container {
+  
+  menu {
+    position:absolute;
+    left:850px;
+    top:70px;
+    z-index:1000;
+
+    li {
+      list-style:none;
+      font-family: 'Architects Daughter', arial, serif;
+      display:block;
+      text-align:center;
+      margin-left:-25px;
+
+      &:nth-child(odd) {
+        margin-left:-32px;
+      }
+
+      a {
+        font-size:17px;
+        text-decoration:none;
+        color:#000;
+        cursor:pointer;
+        background:url('../img/mrak_menu.png') 0 0 no-repeat; 
+        width:151px;
+        height:111px;
+        line-height:111px;
+        display:block;
+        -webkit-transition: all $text_transition linear;
+        -moz-transition: all $text_transition linear;
+        -o-transition: all $text_transition linear;
+        transition: all $text_transition linear;
+        text-shadow:0 0 2px #000;
+      }
+
+      &:nth-child(odd) a {
+        -webkit-transform: rotate(-11deg);
+        -moz-transform: rotate(-11deg);
+        -o-transform: rotate(-11deg);
+        transform: rotate(-11deg);
+        &:hover, &:active {
+          @include hover-child;
+        }
+
+      }
+      &:nth-child(even) a {
+         -webkit-transform: rotate(+5deg);
+        -moz-transform: rotate(+5deg);
+        -o-transform: rotate(+5deg);
+        transform: rotate(+5deg);
+        &:hover, &:active {
+          @include hover-child;
+        }
+      }
+
+      
+    }
+
+  }
+
+}
+
 #text-container {
   padding:15px;
   font-size:20px;
 
+}
+
+.js #texty .text {
+  display:none;  
 }
 
 
@@ -93,6 +173,7 @@ $mrak-timing-function: linear;
 /* sekce s mraky */
 
 .mrakl, .mrakr {
+  position:fixed;
   position:absolute;
   z-index:5;
 
@@ -186,162 +267,113 @@ $mrak-timing-function: linear;
   @include mrak-move-l;
 } 
 
-
-
 .speed1 {
-
   -webkit-animation-duration: 165s;
-
 }
-
-
-
 .speed2 {
-
   -webkit-animation-duration: 170s;
-
 }
-
-
-
 .speed3 {
-
   -webkit-animation-duration: 175s;
-
 }
-
-
-
 .speed4 {
-
   -webkit-animation-duration: 180s;
-
 }
-
-
-
 .speed5 {
-
   -webkit-animation-duration: 185s;
-
 }
-
-
-
 .speed6 {
-
   -webkit-animation-duration: 190s;
-
 }
-
-
-
 .speed7 {
-
   -webkit-animation-duration: 195s;
-
 }
-
-
-
 .speed8 {
-
   -webkit-animation-duration: 200s;
-
 }
-
-
-
 .speed9 {
-
   -webkit-animation-duration: 205s;
-
 }
-
-
-
 .speed10 {
-
   -webkit-animation-duration: 210s;
-
 }
-
-
-
 .speed11 {
-
   -webkit-animation-duration: 215s;
-
 }
-
-
-
 .speed12 {
-
   -webkit-animation-duration: 220s;
-
 }
-
-
-
 .speed13 {
-
   -webkit-animation-duration: 225s;
-
 }
-
-
-
 .speed14 {
-
   -webkit-animation-duration: 230s;
-
 }
-
-
-
 .speed15 {
-
   -webkit-animation-duration: 235s;
-
 }
-
-
-
 .speed16 {
-
   -webkit-animation-duration: 240s;
-
 }
-
-
-
 .speed17 {
-
   -webkit-animation-duration: 245s;
-
 }
-
-
-
 .speed18 {
-
   -webkit-animation-duration: 250s;
-
 }
-
-
-
 .speed19 {
-
   -webkit-animation-duration: 255s;
-
+}
+.speed20 {
+  -webkit-animation-duration: 260s;
 }
 
 
+$mrak_scale_2 : 0.77;
 
-.speed20 {
+@media only screen and (max-width: 900px), only screen and (max-device-width: 900px) { 
 
-  -webkit-animation-duration: 260s;
+  #content {
+    background:none;
+    padding-left:50px;
+    min-width:250px;
+    max-width:550px;
+    margin:0 auto;
+  }
+
+  #container {
+    background:url('../img/bg_zirafky_small.png') 5px 450px no-repeat;
+
+    menu {
+      position:relative;
+      top:-20px;
+      left:30px;
+      li {
+      float:left;        
+        -webkit-transform: scale($mrak_scale_2);
+        -moz-transform: scale($mrak_scale_2);
+        -o-transform: scale($mrak_scale_2);  
+        transform: scale($mrak_scale_2);          
+      }
+    }
+  }
+
+  #text {
+    width:90%;
+  }
+
+}
+
+@media only screen and (max-width: 350px), only screen and (max-device-width: 350px) { 
+
+  #content {
+    padding-left:20px;
+    margin:0;
+  }
+
+  body, html {
+    /*overflow:auto;*/
+  }
+  
 
 }
