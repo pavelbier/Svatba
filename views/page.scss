@@ -5,8 +5,12 @@ body {
   background:#00B513 url('../img/bg_page.jpg') left top repeat-x;  
 }
 
+.ie6, .ie7 {
+  height:650px;
+}
+
 #content { 
-  height:650px; 
+  min-height:650px; 
   background:url('../img/bg_zirafky.png') 20px 150px no-repeat; 
   position:relative; 
   z-index:100; 
@@ -15,22 +19,38 @@ body {
 
 }
 
+.text-stred {
+  text-align:center;
+}
+
 $text-border-radius: 12px;
 $text-box-shadow: 0px 0px 34px #fff;
+$text-img-shadow: 0px 0px 34px #999;
 $text_transition  : 500ms;
-$text_hover_scale : 1.02;
+$pozvanka_transition  : 500ms;
 $link_hover_scale : 1.25;
+
+.text-stred img {
+  -moz-box-shadow: $text-img-shadow; 
+  -webkit-box-shadow: $text-img-shadow; 
+  box-shadow: $text-img-shadow; 
+}
+
+.ie6 #text, .ie7   #text {
+  height:600px;
+}
+
 
 #text { 
 	margin:50px 0 0; 
 	width:500px;
   padding:0;
-	height:600px;
+	min-height:600px;
 	background:#fff;
   color:#905000;
-  overflow:hidden;
+  position:relative;
   -webkit-font-smoothing:antialiased;
-	background:rgba(255,255,255,0.6); 
+	background:rgba(255,255,255,0.5); 
   -moz-border-radius: $text-border-radius; 
   -webkit-border-radius: $text-border-radius; 
   border-radius: $text-border-radius;  
@@ -38,18 +58,20 @@ $link_hover_scale : 1.25;
   -webkit-box-shadow: $text-box-shadow; 
   box-shadow: $text-box-shadow; 
 
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #c9c9c9,
-  0 3px 0 #bbb,
-  0 4px 0 #b9b9b9,
-  0 5px 0 #aaa,
-  0 6px 1px rgba(0,0,0,.1),
-  0 0 5px rgba(0,0,0,.1),
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2),
-  0 5px 10px rgba(0,0,0,.25),
-  0 10px 10px rgba(0,0,0,.2),
-  0 20px 20px rgba(0,0,0,.15);  
+  .stin {
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);     
+  } 
 
   h1 {
     font-size:30px;
@@ -66,22 +88,27 @@ $link_hover_scale : 1.25;
     0 5px 10px rgba(0,0,0,.25),
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);  
+    text-align:center;
+    line-height:1.7;
   }
 
-
-  font-family: 'Architects Daughter', arial, serif;
   -webkit-transition: all $text_transition linear;
   -moz-transition: all $text_transition linear;
   -o-transition: all $text_transition linear;
   transition: all $text_transition linear;
-
+  font-family: 'Architects Daughter', arial, serif;
   &:hover {
-    -webkit-transform: scale($text_hover_scale);
-    -moz-transform: scale($text_hover_scale);
-    -o-transform: scale($text_hover_scale);  
-    transform: scale($text_hover_scale);
+    background:rgba(255,255,255,0.8); 
+  }
 
-  }  
+}
+
+
+#odpocitadlo {
+  position:absolute;
+  bottom:40px;
+  left:0;
+  width:100%;  
 
 }
 
@@ -90,7 +117,8 @@ $link_hover_scale : 1.25;
     -webkit-transform: scale($link_hover_scale);
     -moz-transform: scale($link_hover_scale);
     -o-transform: scale($link_hover_scale);  
-    transform: scale($link_hover_scale);                  
+    transform: scale($link_hover_scale); 
+    color:#01B514;
 }
 
 
@@ -128,6 +156,7 @@ $link_hover_scale : 1.25;
         -o-transition: all $text_transition linear;
         transition: all $text_transition linear;
         text-shadow:0 0 2px #000;
+
       }
 
       &:nth-child(odd) a {
@@ -157,6 +186,27 @@ $link_hover_scale : 1.25;
 
 }
 
+.pozvanka {
+
+    -webkit-transition: all $pozvanka_transition linear;
+    -moz-transition: all $pozvanka_transition linear;
+    -o-transition: all $pozvanka_transition linear;
+    transition: all $pozvanka_transition linear;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);  
+    transform: rotate(2deg);
+
+    &:hover {
+      -webkit-transform: rotate(0deg) scale(1.05);
+      -moz-transform: rotate(0deg) scale(1.05);
+      -o-transform: rotate(0deg) scale(1.05);  
+      transform: rotate(0deg) scale(1.05);
+
+  }
+
+}
+
 #text-container {
   padding:15px;
   font-size:20px;
@@ -165,6 +215,39 @@ $link_hover_scale : 1.25;
 
 .js #texty .text {
   display:none;  
+}
+
+#text-container .popis {
+  padding:15px;
+  font-size:16px;
+
+  p {
+    text-align:justify;
+    margin:0 0 1em 0;
+  }
+
+  a {
+    color:#000;
+  }
+
+  .foto-right {
+    float:right;
+    margin:0 0 5px 15px;
+
+  }
+
+  li {
+    margin-bottom:5px;
+    font-size:120%;    
+    list-style:none
+  }
+
+  img {
+    -moz-box-shadow: $text-img-shadow; 
+    -webkit-box-shadow: $text-img-shadow; 
+    box-shadow: $text-img-shadow;     
+  }
+
 }
 
 
@@ -370,6 +453,13 @@ $mrak_scale_2 : 0.77;
     padding-left:20px;
     margin:0;
   }
+
+  .foto-right {
+    float:none;
+    max-width:100%;
+  }
+
+
 
   body, html {
     /*overflow:auto;*/
