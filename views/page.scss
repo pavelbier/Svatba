@@ -6,11 +6,11 @@ body {
 }
 
 .ie6, .ie7 {
-  height:650px;
+  height:670px;
 }
 
 #content { 
-  min-height:650px; 
+  min-height:670px; 
   background:url('../img/bg_zirafky.png') 20px 150px no-repeat; 
   position:relative; 
   z-index:100; 
@@ -37,7 +37,7 @@ $link_hover_scale : 1.25;
 }
 
 .ie6 #text, .ie7   #text {
-  height:600px;
+  height:610px;
 }
 
 
@@ -45,7 +45,7 @@ $link_hover_scale : 1.25;
 	margin:50px 0 0; 
 	width:500px;
   padding:0;
-	min-height:600px;
+	min-height:610px;
 	background:#fff;
   color:#905000;
   position:relative;
