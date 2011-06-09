@@ -51,9 +51,11 @@ $link_hover_scale : 1.25;
   position:relative;
   -webkit-font-smoothing:antialiased;
 	background:rgba(255,255,255,0.5); 
+  -ms-border-radius: $text-border-radius; 
   -moz-border-radius: $text-border-radius; 
   -webkit-border-radius: $text-border-radius; 
   border-radius: $text-border-radius;  
+  -ms-box-shadow: $text-box-shadow; 
   -moz-box-shadow: $text-box-shadow; 
   -webkit-box-shadow: $text-box-shadow; 
   box-shadow: $text-box-shadow; 
@@ -94,6 +96,7 @@ $link_hover_scale : 1.25;
 
   -webkit-transition: all $text_transition linear;
   -moz-transition: all $text_transition linear;
+  -ms-transition: all $text_transition linear;
   -o-transition: all $text_transition linear;
   transition: all $text_transition linear;
   font-family: 'Architects Daughter', arial, serif;
@@ -117,6 +120,7 @@ $link_hover_scale : 1.25;
     -webkit-transform: scale($link_hover_scale);
     -moz-transform: scale($link_hover_scale);
     -o-transform: scale($link_hover_scale);  
+    -ms-transform: scale($link_hover_scale);  
     transform: scale($link_hover_scale); 
     color:#01B514;
 }
@@ -153,6 +157,7 @@ $link_hover_scale : 1.25;
         display:block;
         -webkit-transition: all $text_transition linear;
         -moz-transition: all $text_transition linear;
+        -ms-transition: all $text_transition linear;
         -o-transition: all $text_transition linear;
         transition: all $text_transition linear;
         text-shadow:0 0 2px #000;
@@ -162,6 +167,7 @@ $link_hover_scale : 1.25;
       &:nth-child(odd) a {
         -webkit-transform: rotate(-11deg);
         -moz-transform: rotate(-11deg);
+        -ms-transform: rotate(-11deg);
         -o-transform: rotate(-11deg);
         transform: rotate(-11deg);
         &:hover, &:active {
@@ -172,6 +178,7 @@ $link_hover_scale : 1.25;
       &:nth-child(even) a {
          -webkit-transform: rotate(+5deg);
         -moz-transform: rotate(+5deg);
+        -ms-transform: rotate(+5deg);
         -o-transform: rotate(+5deg);
         transform: rotate(+5deg);
         &:hover, &:active {
@@ -190,16 +197,19 @@ $link_hover_scale : 1.25;
 
     -webkit-transition: all $pozvanka_transition linear;
     -moz-transition: all $pozvanka_transition linear;
+    -ms-transition: all $pozvanka_transition linear;
     -o-transition: all $pozvanka_transition linear;
     transition: all $pozvanka_transition linear;
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
     -o-transform: rotate(2deg);  
     transform: rotate(2deg);
 
     &:hover {
       -webkit-transform: rotate(0deg) scale(1.05);
       -moz-transform: rotate(0deg) scale(1.05);
+      -ms-transform: rotate(0deg) scale(1.05);
       -o-transform: rotate(0deg) scale(1.05);  
       transform: rotate(0deg) scale(1.05);
 
@@ -244,6 +254,7 @@ $link_hover_scale : 1.25;
 
   img {
     -moz-box-shadow: $text-img-shadow; 
+    -ms-box-shadow: $text-img-shadow; 
     -webkit-box-shadow: $text-img-shadow; 
     box-shadow: $text-img-shadow;     
   }
@@ -265,18 +276,26 @@ $mrak-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-transition: none;
   -webkit-transition-timing-function: $mrak-timing-function;
+  -webkit-animation-direction: normal;
 
   -moz-animation-name: mrak-move-r;
   -moz-animation-duration: 50s;
   -moz-animation-iteration-count: infinite;
   -moz-transition: none;
   -moz-transition-timing-function: $mrak-timing-function;
+  -moz-animation-direction: normal;
 
   -o-animation-name: mrak-move-r;
   -o-animation-duration: 50s;
   -o-animation-iteration-count: infinite;
   -o-transition: none;
   -o-transition-timing-function: $mrak-timing-function;
+
+  -ms-animation-name: mrak-move-r;
+  -ms-animation-duration: 50s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transition: none;
+  -ms-transition-timing-function: $mrak-timing-function;
 
   animation-name: mrak-move-r;
   animation-duration: 50s;
@@ -290,30 +309,56 @@ $mrak-timing-function: linear;
 .mrakr {
   -webkit-animation-name: mrak-move-l;
   -moz-animation-name: mrak-move-l;
+  -o-animation-name: mrak-move-l;
+  -ms-animation-name: mrak-move-l;
 }
 
 @mixin mrak-move-r {
   from {
     -webkit-transform: translate(-100px);
+    -ms-transform: translate(-100px);
+  }
+  0% {
+    -moz-transform: translate(-100px);
   }
   50% {
     -webkit-transform: translate(200px);
+    -o-transform: translate(200px);
+    -ms-transform: translate(200px);
   }
   to {
     -webkit-transform: translate(-100px);
+    -o-transform: translate(-100px);
+    -ms-transform: translate(-100px);
+  }
+  100% {
+    -moz-transform: translate(-100px);
   }
 }
 
 @mixin mrak-move-l {
   from {
     -webkit-transform: translate(100px);
+    -o-transform: translate(100px);
+    -ms-transform: translate(100px);
+  }
+  0% {
+    -moz-transform: translate(100px);
   }
   50% {
     -webkit-transform: translate(-200px);
+    -o-transform: translate(-200px);
+    -moz-transform: translate(-200px);
+    -ms-transform: translate(-200px);
   }
-  to {
-    -webkit-transform: translate(100px);
+  100% {
+    -moz-transform: translate(100px);
   } 
+  to {
+    -webkit-transform: translate(100px);    
+    -o-transform: translate(100px);    
+    -ms-transform: translate(100px);    
+  }
 }
 
 
@@ -435,6 +480,7 @@ $mrak_scale_2 : 0.77;
       float:left;        
         -webkit-transform: scale($mrak_scale_2);
         -moz-transform: scale($mrak_scale_2);
+        -ms-transform: scale($mrak_scale_2);
         -o-transform: scale($mrak_scale_2);  
         transform: scale($mrak_scale_2);          
       }
