@@ -16,10 +16,9 @@ $(document).ready ->
       domid = $(target).attr "href"
       $('html,body').animate {scrollTop: 0},'normal',->
         tc.fadeOut 'slow',->
-          tc.html (domid=='#home') ? homeText : $(domid).html()
+          tc.html if domid=='#home' then homeText else $(domid).html()
           tc.fadeIn 'slow'
           reinit();
-          null
 
   if window.location.hash && window.location.hash != '#home'
       tc.html $(window.location.hash).html()
