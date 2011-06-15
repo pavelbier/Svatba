@@ -1,42 +1,28 @@
-class Mrak
-	constructor: (later = false) -> 
-		@smer = if Math.random() > 0.5 then -1 else 1
-		@speed = Math.random() * 5
-		@velikost_mraku = 1 + Math.round Math.random() * 2
-		body = $ 'body'
-		@body_width = body.width()
-		@start_x = if later then 0 else Math.round Math.random() * @body_width
-		@start_x = @body_width if @start_x==0 and later
-		@start_y = Math.round Math.random() * 550
-		@objekt = $ '<img>', { src : '/img/mrak'+ @velikost_mraku + '.png' , style : 'position: absolute; left : '+ @start_x+'px  ; top: '+ @start_y+'px; z-index:5';  }
-		@objekt.appendTo body
-		#console.log(@);
-	
-	kam: ->
-		alert @smer
+$(document).ready ->
+  tc = $('#text-container')
+  homeText = tc.html();
+  targetDate = new Date 2011, 8-1, 6,11,30,0
 
-	presun: ->
-		#position = @objekt.position()
-		#@objekt.position position.left+1, position.top
-		@presun = if @smer == 1 then '+=' else '-='
-		@objekt.animate { left :  @presun+(@body_width + 200)  , },50000 * @speed, ->
-			@?.objekt?.remove()
-			mrak = new Mrak true
-			mrak.presun()
-						
+  reinit = -> 
+    $('.fancybox').fancybox();    
+    $('.fancyboxHtml').fancybox { type:'iframe', width:'80%', height:'80%' }
+    $('#countdown').countdown {until: targetDate}
+  
 
 
-class Mraky
-	constructor: ->
-		@pocet = 7
-		@mrak = []		
-		for i in [0...@pocet]
-			@mrak[i] = new Mrak
+  $('menu').bind 'click', (e) ->
+    target = e.target
+    if (target.nodeName == 'A')
+      domid = $(target).attr "href"
+      $('html,body').animate {scrollTop: 0},'normal',->
+        tc.fadeOut 'slow',->
+          tc.html (domid=='#home') ? homeText : $(domid).html()
+          tc.fadeIn 'slow'
+          reinit();
+          null
 
-	move: ->
-		for i in [0...@pocet]
-			@mrak[i].presun()
+  if (window.location.hash && window.location.hash != '#home')
+      tc.html $(window.location.hash).html()
 
+  reinit();
 
-mraky = new Mraky
-mraky.move()
