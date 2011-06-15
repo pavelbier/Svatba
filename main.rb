@@ -7,7 +7,7 @@ require 'coffee-script'
 set :public, File.dirname(__FILE__) + '/static'
 
 get '/application.js' do
-    coffee :application
+	coffee :application
 end
 
 get '/css/page.css' do
