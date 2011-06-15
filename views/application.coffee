@@ -21,7 +21,7 @@ $(document).ready ->
           reinit();
           null
 
-  if (window.location.hash && window.location.hash != '#home')
+  if window.location.hash && window.location.hash != '#home'
       tc.html $(window.location.hash).html()
 
   reinit();
