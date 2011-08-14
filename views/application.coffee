@@ -6,7 +6,7 @@ $(document).ready ->
   reinit = -> 
     $('.fancybox').fancybox()    
     $('.fancyboxHtml').fancybox { type:'iframe', width:'80%', height:'80%' }
-    $('#countdown').countdown {until: targetDate}
+    $('#countdown').countdown {since: targetDate}
   
 
 
